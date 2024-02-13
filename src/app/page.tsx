@@ -8,10 +8,10 @@ import Hero from "./components/Hero";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="pt-[60px]">
+      <main className="pt-[120px] grow">
         <Container>
           <Hero />
           <Clients />
