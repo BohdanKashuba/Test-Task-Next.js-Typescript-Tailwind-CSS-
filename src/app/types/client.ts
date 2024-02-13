@@ -1,16 +1,29 @@
+interface IGeo {
+    lat: string;
+    lng: string;
+}
+
 interface IAddress {
-    city: string,
-    street: string,
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: IGeo;
 }
 
 interface ICompany {
-    name: string,
+    name: string;
+    catchPhrase: string;
+    bs: string;
 }
 
 export interface IClient {
-    id: string,
-    name: string,
-    email: string,
-    address: IAddress,
-    company: ICompany,
+    id: number; // Предполагаю, что id может быть числовым
+    name: string;
+    username: string;
+    email: string;
+    address: IAddress;
+    phone: string;
+    website: string;
+    company: ICompany;
 }
